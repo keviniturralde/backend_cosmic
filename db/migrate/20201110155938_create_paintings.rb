@@ -4,7 +4,7 @@ class CreatePaintings < ActiveRecord::Migration[6.0]
       t.string :name
       t.integer :year_created
       t.string :painting_inspiration
-      t.string :image_url
+      t.string :painting_url
       t.belongs_to :artist, null: false, foreign_key: true
 
       t.timestamps

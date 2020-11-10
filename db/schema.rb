@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2020_11_10_155938) do
     t.string "name"
     t.integer "year_created"
     t.string "painting_inspiration"
-    t.string "image_url"
+    t.string "painting_url"
     t.bigint "artist_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
