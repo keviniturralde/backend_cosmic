@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+Artist.destroy_all
 4.times do
     artist = Artist.create!(
         name: Faker::Artist.name,
@@ -14,9 +14,9 @@
     )
     2.times do
         Painting.create!(
-        name: Faker::Food.description,
+        name: Faker::Food.dish,
         year_created: Faker::Date.between(from: '1700-09-23', to: '1940-09-25'),
-        painting_inspiration: Faker::Lorem.sentences,
+        painting_inspiration: Faker::Food.description,
         painting_url: 'https://images-na.ssl-images-amazon.com/images/I/61vvPgDP7hL._AC_.jpg',
         artist: artist 
         )

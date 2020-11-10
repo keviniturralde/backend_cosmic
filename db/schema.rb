@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2020_11_10_155938) do
 
   create_table "paintings", force: :cascade do |t|
     t.string "name"
-    t.integer "year_created"
+    t.string "year_created"
     t.string "painting_inspiration"
     t.string "painting_url"
     t.bigint "artist_id", null: false
